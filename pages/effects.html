@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анимации — jQuery Lab</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/effects.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Анимации и эффекты jQuery</h1>
+        <nav>
+          <a href="../index.html">На главную</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Эффекты появления</h2>
+
+          <button id="fadeInBtn">Показать</button>
+          <button id="fadeOutBtn">Скрыть</button>
+          <button id="slideToggleBtn">Переключить</button>
+
+          <div id="effectsBox">
+            <p>Демонстрация эффектов jQuery</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Пользовательская анимация</h2>
+
+          <button id="animateBtn">Запустить анимацию</button>
+
+          <div class="animation-area">
+            <div id="animationBox"></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Последовательная анимация</h2>
+
+          <button id="queueBtn">Запустить очередь анимаций</button>
+
+          <div class="animation-area">
+            <div id="queueBox"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 jQuery Lab</p>
+      </footer>
+    </div>
+
+    <script src="../js/effects.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+#effectsBox {
+  width: 300px;
+  min-height: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  background: #dce8ff;
+  border-radius: 12px;
+}
+
+.animation-area {
+  position: relative;
+  min-height: 220px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed #aaa;
+}
+
+#animationBox,
+#queueBox {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  background: #8e24aa;
+  border-radius: 12px;
+}
+
+#queueBox {
+  background: #43a047;
+}

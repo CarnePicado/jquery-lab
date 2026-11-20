@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка событий — jQuery Lab</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Обработка событий jQuery</h1>
+            <nav>
+                <a href="../index.html">На главную</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Управление элементом</h2>
+
+                <div class="event-buttons">
+                    <button id="showBtn">Показать</button>
+                    <button id="hideBtn">Скрыть</button>
+                    <button id="toggleBtn">Переключить</button>
+                </div>
+
+                <div id="demoBox"></div>
+
+                <p>Дважды нажми на квадрат, чтобы изменить его цвет.</p>
+                <p>Нажми Escape, чтобы скрыть квадрат.</p>
+            </section>
+
+            <section>
+                <h2>Динамические элементы</h2>
+
+                <button id="addDynamicBtn">Добавить элемент</button>
+                <div id="dynamic-container"></div>
+            </section>
+
+            <section>
+                <h2>Работа с полем ввода</h2>
+
+                <input type="text" id="nameInput" placeholder="Введите имя">
+                <p>Цвет рамки меняется при вводе текста.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 jQuery Lab</p>
+        </footer>
+    </div>
+
+    <script src="../js/events.js"></script>
+</body>
+</html>

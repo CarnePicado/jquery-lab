@@ -1,0 +1,155 @@
+.shop-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.shop-controls input,
+.shop-controls select,
+#orderForm input,
+#orderForm textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.shop-controls input {
+  flex: 1;
+  min-width: 200px;
+}
+
+#products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.product-category {
+  color: #888;
+  font-size: 13px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: auto;
+  padding: 12px 0;
+}
+
+.add-to-cart,
+#clearCartBtn,
+#orderForm button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2a2f45;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover,
+#clearCartBtn:hover,
+#orderForm button:hover {
+  background: #9a8550;
+}
+
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px;
+  margin: 10px 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.cart-item h3 {
+  flex: 1;
+  min-width: 150px;
+  font-size: 15px;
+}
+
+.remove-from-cart {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #e53935;
+  color: white;
+  cursor: pointer;
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+#orderForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#notification {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 15px 20px;
+  background: #2a2f45;
+  color: white;
+  border-radius: 8px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .shop-controls {
+    flex-direction: column;
+  }
+
+  .shop-controls input,
+  .shop-controls select {
+    width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

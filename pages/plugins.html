@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-плагины — jQuery Lab</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/plugins.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Собственные jQuery-плагины</h1>
+            <nav>
+                <a href="../index.html">На главную</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Плагин highlight()</h2>
+                <p>Плагин изменяет цвет фона выбранных элементов.</p>
+
+                <div class="plugin-item">Первый элемент</div>
+                <div class="plugin-item">Второй элемент</div>
+                <div class="plugin-item">Третий элемент</div>
+
+                <button id="highlightBtn">Подсветить элементы</button>
+            </section>
+
+            <section>
+                <h2>Плагин makeBig()</h2>
+                <p>Плагин увеличивает размер текста и делает его жирным.</p>
+
+                <div class="plugin-text">Демонстрация работы плагина.</div>
+                <div class="plugin-text">jQuery позволяет создавать собственные плагины.</div>
+
+                <button id="makeBigBtn">Увеличить текст</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 jQuery Lab</p>
+        </footer>
+    </div>
+
+    <script src="../js/plugins/custom-plugin.js"></script>
+    <script src="../js/plugins.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с DOM — jQuery Lab</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Работа с DOM</h1>
+            <nav>
+                <a href="../index.html">На главную</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="content">
+                <h2>Манипуляции с DOM</h2>
+
+                <div class="item" data-id="1">Элемент 1</div>
+                <div class="item" data-id="2">Элемент 2</div>
+                <div class="item" data-id="3">Элемент 3</div>
+
+                <form id="addForm">
+                    <input type="text" id="itemText" placeholder="Введите новый элемент">
+                    <button type="submit">Добавить элемент</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 jQuery Lab</p>
+        </footer>
+    </div>
+
+    <script src="../js/plugins/custom-plugin.js"></script>
+    <script src="../js/dom.js"></script>
+</body>
+</html>
